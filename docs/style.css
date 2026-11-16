@@ -117,3 +117,7 @@ main{padding-top:14px;padding-bottom:30px}
  .prac.big{font-size:1.2rem}
 }
 @media print{.katex-display,.qbox,.abox,.step-b,.prac li{overflow:visible}}
+
+/* KaTeXの隠しMathMLが画面外へ伸びて、ページ全体が横に広がるのを防ぐ */
+main{position:relative;overflow-x:hidden}
+.katex-display,.qbox,.abox,.step-b,.step-h,.prac li,.pq{position:relative}
