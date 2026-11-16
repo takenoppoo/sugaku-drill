@@ -66,6 +66,12 @@ main{padding-top:14px;padding-bottom:30px}
 .site-f a{color:#555}
 @media(max-width:560px){body{font-size:16px}.lh{flex-direction:column;align-items:flex-start;gap:6px}.site-h nav a{margin-left:10px;font-size:.85rem}}
 
+.ulist{list-style:none;padding:0;margin:4px 0 8px}
+.ulist li{padding:8px 12px;border:1px solid #cdd6e6;border-radius:8px;margin:6px 0;background:#fff}
+.ulist li.on a{font-weight:700}
+.ulist li.off{color:#888;background:#f5f5f5}
+.ulist li.off span{float:right;font-size:.8rem}
+.card .small{display:block;font-size:.8rem;color:#666;margin-top:4px}
 .prac.big{font-size:1.4rem}
 .prac.big li{margin:12px 0}
 .gh{margin:20px 0 6px;font-size:1.05rem;color:var(--navy)}
