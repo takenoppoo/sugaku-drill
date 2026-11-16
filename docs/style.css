@@ -147,9 +147,9 @@ main{padding-top:14px;padding-bottom:30px}
 .prac li,.pq{overflow-wrap:anywhere}
 @media(max-width:560px){
  .qbox,.abox{padding-left:12px;padding-right:12px}
- .qbox .katex-display{font-size:1.2em}
- .abox .katex-display{font-size:1.1em}
- .abox.sm .katex-display{font-size:1em}
+ .qbox .katex-display{font-size:1.05em}
+ .abox .katex-display{font-size:.95em}
+ .abox.sm .katex-display{font-size:.9em}
  .ans-mark{position:static;text-align:right;margin-top:4px;font-size:1.5rem}
  .prac{font-size:1.1rem}
  .prac.big{font-size:1.2rem}
