@@ -198,5 +198,5 @@ main.wrap.panel{background:#fff;border-radius:12px;box-shadow:0 1px 8px rgba(0,0
 @media(max-width:560px){main.wrap.panel{padding:6px 14px 16px;border-radius:8px}}
 @media print{main.wrap.panel{box-shadow:none;padding:0}}
 .bar .tbl{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
-.bar .tbl th,.bar .tbl td{padding:3px 9px;white-space:nowrap}
-@media(max-width:560px){.bar .tbl th,.bar .tbl td{padding:3px 6px;font-size:.92rem}}
+.bar .tbl th,.bar .tbl td{padding:3px 5px;white-space:nowrap;font-size:.95rem}
+@media(max-width:560px){.bar .tbl th,.bar .tbl td{padding:3px 4px;font-size:.85rem}}
