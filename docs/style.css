@@ -67,3 +67,97 @@ main{padding-top:14px;padding-bottom:30px}
 .site-f{background:#fff;border-top:1px solid #ddd;font-size:.85rem;text-align:center;padding:12px 0;color:#555}
 .site-f a{color:#555}
 @media(max-width:560px){body{font-size:16px}.lh{flex-direction:column;align-items:flex-start;gap:6px}.site-h nav a{margin-left:10px;font-size:.85rem}}
+
+.ulist{list-style:none;padding:0;margin:4px 0 8px}
+.ulist li{padding:8px 12px;border:1px solid #cdd6e6;border-radius:8px;margin:6px 0;background:#fff}
+.ulist li.on a{font-weight:700}
+.ulist li.off{color:#888;background:#f5f5f5}
+.ulist li.off span{float:right;font-size:.8rem}
+.card .small{display:block;font-size:.8rem;color:#666;margin-top:4px}
+.prac.big{font-size:1.4rem}
+.prac.big li{margin:12px 0}
+.gh{margin:20px 0 6px;font-size:1.05rem;color:var(--navy)}
+.links{padding-left:1.4em}
+.links li{margin:4px 0}
+@media print{
+ @page{size:A4;margin:9mm}
+ body{font-size:13.5px;line-height:1.55}
+ .pg{break-after:page;page-break-after:always}
+ .pg:last-child{break-after:auto;page-break-after:auto}
+ .lh{margin:0 0 8px}
+ .bar{margin:8px 0;padding:6px 12px 8px}
+ .qbox{margin:8px 0;padding:6px 14px}
+ .abox{margin:8px 0;padding:6px 14px}
+ .step{margin:6px 0}
+ .tasuki svg{max-width:420px}
+ .tbl th,.tbl td{padding:1px 12px}
+ .prac{font-size:1.25rem;margin:2px 0}
+ .prac li{margin:4px 0}
+ .prac.big{font-size:1.3rem}
+ .prac.big li{margin:9px 0}
+ .pq{font-size:1.2rem;margin:0}
+ .katex-display{margin:.5em 0}
+ .qbox .katex-display{font-size:1.4em}
+ .abox .katex-display{font-size:1.25em}
+ .abox.sm .katex-display{font-size:1.15em}
+ .site-h,.site-f,.pn,.btn,.crumb,.dl{display:none}
+}
+
+.figrow{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.figrow .fig{flex:1 1 30%;min-width:170px;max-width:260px}
+.fig.fs svg{max-width:260px}
+.gr-x{fill:none;stroke:#999;stroke-width:2;stroke-dasharray:6 4}
+.gr-ln{stroke:#2E7D5B;stroke-width:2.4}
+.rc-r{fill:#EEF3FC;stroke:#1F4E9A;stroke-width:2.4}
+.fig{margin:6px 0}
+.fig svg{width:100%;max-width:420px;height:auto;display:block;margin:0 auto}
+.fig-c{text-align:center;font-size:.85rem;color:#555;margin:0}
+.gr-g{stroke:#e2e6ee;stroke-width:1}
+.gr-a{stroke:#222;stroke-width:1.6}
+.gr-t{font-size:14px;font-style:italic;fill:#222}
+.gr-s{font-size:12px;fill:#555}
+.gr-c{fill:none;stroke:#1F4E9A;stroke-width:2.6}
+.gr-h{fill:none;stroke:#c0283c;stroke-width:5;opacity:.85}
+.gr-d{stroke:#777;stroke-width:1.4;stroke-dasharray:5 4}
+.gr-r{stroke:#c0283c;stroke-width:5}
+.gr-pt{fill:#c0283c}
+.gr-pc{fill:#c0283c;stroke:#c0283c;stroke-width:1.5}
+.gr-po{fill:#fff;stroke:#c0283c;stroke-width:2}
+.gr-l{font-size:13px;fill:#222}
+
+.tips{background:#FFF8E6;border-left:5px solid #E0A020;padding:8px 16px 10px;margin:14px 0}
+.tips h2{margin:0 0 4px;font-size:1.05rem;color:#9A6400}
+.tips ul{margin:0;padding-left:1.1em;list-style:none}
+.tips li{margin:5px 0;text-indent:-1.1em;padding-left:1.1em}
+.tg{display:inline-block;background:#E0A020;color:#fff;font-size:.78rem;padding:0 7px;margin-right:6px;border-radius:3px;text-indent:0}
+.mi .tg{background:#c0283c}
+@media print{.tips{margin:8px 0;padding:5px 12px 6px}.tips li{margin:2px 0}}
+.pnote{margin:4px 0 2px;font-size:1rem}
+.qbox p{margin:4px 0}
+@media print{
+ .fig{margin:2px 0}
+ .fig svg{max-width:270px}
+ .fig-c{font-size:11px}
+ .pnote{margin:2px 0}
+}
+
+/* はみ出し対策：拡大・縮小・スマホ幅でも式や答案が枠から出ないようにする */
+.katex-display{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:.15em 0}
+.qbox,.abox,.bar,.hero,.card{min-width:0;max-width:100%}
+.abox,.qbox{overflow-x:auto}
+.step-b,.step-h,.prac li,.pq{max-width:100%;overflow-x:auto;overflow-y:hidden}
+.prac li,.pq{overflow-wrap:anywhere}
+@media(max-width:560px){
+ .qbox,.abox{padding-left:12px;padding-right:12px}
+ .qbox .katex-display{font-size:1.05em}
+ .abox .katex-display{font-size:.95em}
+ .abox.sm .katex-display{font-size:.9em}
+ .ans-mark{position:static;text-align:right;margin-top:4px;font-size:1.5rem}
+ .prac{font-size:1.1rem}
+ .prac.big{font-size:1.2rem}
+}
+@media print{.katex-display,.qbox,.abox,.step-b,.prac li{overflow:visible}}
+
+/* KaTeXの隠しMathMLが画面外へ伸びて、ページ全体が横に広がるのを防ぐ */
+main{position:relative;overflow-x:hidden}
+.katex-display,.qbox,.abox,.step-b,.step-h,.prac li,.pq{position:relative}
