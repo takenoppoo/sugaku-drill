@@ -47,8 +47,8 @@ main{padding-top:14px;padding-bottom:30px}
 .ans-mark{position:absolute;right:20px;bottom:10px;margin:0;color:var(--red);font-size:1.7rem;font-weight:700}
 .check{font-size:.92rem;margin:4px 0 0}
 .prac{font-size:1.25rem;list-style:none;counter-reset:pr;padding-left:0;margin:6px 0}
-.prac li{margin:8px 0;counter-increment:pr;display:flex;gap:.6em;align-items:baseline}
-.prac li::before{content:"(" counter(pr) ")";font-weight:700;color:var(--navy);min-width:2.2em}
+.prac li{margin:8px 0;counter-increment:pr;position:relative;padding-left:2.6em}
+.prac li::before{content:"(" counter(pr) ")";font-weight:700;color:var(--navy);position:absolute;left:0}
 .pq{font-size:1.2rem;margin:2px 0}
 .btn{display:inline-block;background:var(--navy);color:#fff;padding:8px 18px;border-radius:6px;text-decoration:none;font-size:.95rem}
 .btn:hover{opacity:.88}
