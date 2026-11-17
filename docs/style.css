@@ -197,3 +197,6 @@ main{position:relative;overflow-x:hidden}
 main.wrap.panel{background:#fff;border-radius:12px;box-shadow:0 1px 8px rgba(0,0,0,.08);padding:8px 24px 20px;margin-top:12px;margin-bottom:20px}
 @media(max-width:560px){main.wrap.panel{padding:6px 14px 16px;border-radius:8px}}
 @media print{main.wrap.panel{box-shadow:none;padding:0}}
+.bar .tbl{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.bar .tbl th,.bar .tbl td{padding:3px 9px;white-space:nowrap}
+@media(max-width:560px){.bar .tbl th,.bar .tbl td{padding:3px 6px;font-size:.92rem}}
