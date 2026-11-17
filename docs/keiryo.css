@@ -45,3 +45,6 @@
 
 /* 数式の途中（「=」の直後など）で改行しない */
 .pt .katex-html,.prac .katex-html,.ptxt .katex-html{display:inline-block;max-width:92%;vertical-align:baseline}
+
+/* 小問(1)(2)…を含む練習問題は、問題番号を「1.」「2.」にする */
+.prac.dec li::before{content:counter(pr) "."}
