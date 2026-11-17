@@ -191,3 +191,6 @@ main{padding-top:14px;padding-bottom:30px}
 /* KaTeXの隠しMathMLが画面外へ伸びて、ページ全体が横に広がるのを防ぐ */
 main{position:relative;overflow-x:hidden}
 .katex-display,.qbox,.abox,.step-b,.step-h,.prac li,.pq{position:relative}
+
+/* 問題文の数式は「=」の直後などで改行せず、ひとまとまりで折り返す */
+.pt .katex-html,.pq .katex-html,.prac .katex-html,.qbox .katex-html{display:inline-block;max-width:92%;vertical-align:baseline}
