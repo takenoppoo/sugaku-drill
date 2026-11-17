@@ -200,3 +200,39 @@ main.wrap.panel{background:#fff;border-radius:12px;box-shadow:0 1px 8px rgba(0,0
 .bar .tbl{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .bar .tbl th,.bar .tbl td{padding:3px 5px;white-space:nowrap;font-size:.95rem}
 @media(max-width:560px){.bar .tbl th,.bar .tbl td{padding:3px 4px;font-size:.85rem}}
+
+/* 第2章 集合と命題（body.ch2 のページだけに効く） */
+.ch2 .fig{text-align:center;margin:6px 0}
+.ch2 .fig svg{width:100%;max-width:330px;height:auto}
+.ch2 .fig text{fill:#222}
+.ch2 .figrow{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.ch2 .figrow .fig{flex:1 1 230px;max-width:260px}
+.ch2 .figcap{font-size:.86rem;color:#444;margin:2px 0;line-height:1.5}
+.ch2 .kt{margin:4px 0;padding-left:1.4em;font-size:.95rem}
+.ch2 .kt li{margin:3px 0}
+.ch2 .refs li{margin:8px 0}
+.ch2 .refs .small{display:block}
+.ch2 .abox.tx{padding-bottom:2.4em}
+.ch2 .abox.tx p{margin:6px 0}
+.ch2 .abox.tx .ans-mark{font-size:1.4rem}
+.ch2 .pit{margin:4px 0;padding-left:1.4em;font-size:.95rem}
+.ch2 .pit li{margin:3px 0}
+.ch2 .prac.txt{font-size:1.08rem}
+.ch2 .prac.txt li{margin:8px 0}
+.ch2 ul.cond{font-size:1.02rem;margin:6px 0;padding-left:1.5em}
+@media print{
+.ch2 .ktw{display:none}
+.ch2 .bar::after{content:"";display:block;clear:both}
+.ch2 .bar>.fig{float:right;width:42%;margin:0 0 2px 10px}
+.ch2 .bar>.fig svg{max-width:100%}
+.ch2 .bar>.fig.wide{float:none;width:auto;margin:4px auto}
+.ch2 .bar>.fig.wide svg{max-width:280px}
+.ch2 .figrow{clear:both}
+.ch2 .figrow .fig{max-width:48%}
+.ch2 .fig svg{max-width:250px}
+.ch2 .figcap{font-size:.8rem}
+.ch2 .kt{font-size:.88rem}
+.ch2 .abox.tx{padding-bottom:2em}
+.ch2 .pit{font-size:.88rem}
+.ch2 .prac.txt{font-size:1.02rem}
+}
