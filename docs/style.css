@@ -194,3 +194,6 @@ main{position:relative;overflow-x:hidden}
 
 /* 問題文の数式は「=」の直後などで改行せず、ひとまとまりで折り返す */
 .pt .katex-html,.pq .katex-html,.prac .katex-html,.qbox .katex-html{display:inline-block;max-width:92%;vertical-align:baseline}
+main.wrap.panel{background:#fff;border-radius:12px;box-shadow:0 1px 8px rgba(0,0,0,.08);padding:8px 24px 20px;margin-top:12px;margin-bottom:20px}
+@media(max-width:560px){main.wrap.panel{padding:6px 14px 16px;border-radius:8px}}
+@media print{main.wrap.panel{box-shadow:none;padding:0}}
